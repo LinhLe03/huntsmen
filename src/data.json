@@ -1,13 +1,50 @@
 {
-    "posts": {
-        "post1": {
-            "Title": "Script Writer",
-            "Responibilities": {
-                "response1": "Design and build responive websites",
-                "response2": "Collabirate with design and marketing teams",
-                "response3": "Optimise website performance and user experience"
-            },
-            "Deadline": "01/01/24"
+    "posts": [
+        {
+            "id": 13,
+            "title": "Web developer",
+            "responsibilities": [
+                "Design and build responive websites",
+                "Collaborate with design and marketing teams",
+                "Optimise website performance and user experience"
+            ],
+            "Deadline": "01/01/24",
+            "details": "About the project: We're looking for a web developer specialising in react.",
+            "requirements": [
+                "Have more than 12+ years of experience in React (release date: 2013)",
+                "I don't know what else to write."
+            ]
+        },
+        {
+            "id": 1,
+            "title": "Structural engineer",
+            "responsibilities": [
+                "Design and develop solutions",
+                "Collabirate with multidisciplanary teams",
+                "Solve complex problems",
+                "Drive R&D initiatives"
+            ],
+            "Deadline": "01/01/24",
+            "details": "About the project: We're looking for a structural engineer to build a mega city in minecraft.",
+            "requirements": [
+                "Be experienced in building (in minecraft).",
+                "Architectural Styles: The engineer could design buildings based on various architectural styles—modern, classical, futuristic, or industrial. These designs would involve thinking about proportions, materials, and visual aesthetics while adhering to the block-based limitations."
+            ]
+        },
+        {
+            "id": 146,
+            "title": "2D animator",
+            "responsibilities": [
+                "Create high-quality 2D animations",
+                "Develop storyboards and concept art"
+            ],
+            "Deadline": "01/01/24",
+            "details": "About the project: We're looking to find a skilled 2D animator to help us make episodic cartoon depicting the talk tuah podcast. What we expect of you: Be cultured.",
+            "requirements": [
+                "Familiarity with the podcast: The animator would need to understand the tone, themes, and subject matter of the Talk Tuah Podcast to accurately represent its style. This includes grasping the podcast’s humor, cultural nuances, or any recurring visual themes.",
+                "Character Design Knowledge: If Talk Tuah features hosts or recurring guests, the animator would need to create or adapt character models that represent these individuals in a recognizable way. This could involve turning podcast hosts into animated avatars or symbols that fit the narrative.",
+                "Visual Storytelling: The ability to creatively interpret what’s being said in the podcast. For example, animating metaphors, jokes, or complex discussions with visual symbols, character reactions, or cutaway scenes."
+            ]
         }
-    }
-} 
+    ]
+}

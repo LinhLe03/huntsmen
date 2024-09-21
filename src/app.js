@@ -94,7 +94,7 @@ function post() {
     const role = document.getElementById("role-output").innerText
     const project = document.getElementById("project-output").innerText
     const body = document.getElementById("body-output").innerText
-    const due = document.getElementById(    )
+    const due = document.getElementById("date-output").innerText
 
     console.log("this would post a post with the title: " + role)
     console.log("Alongside the project name: " + project)
@@ -102,6 +102,6 @@ function post() {
     
     const postpopup = window.open
 
-    const post = "this would post a post with the title: " + role + "\nAlongside the project name: " + project + "\nAnd with some information about the role: " + body;
+    const post = "this would post a post with the title: " + role + "\nAlongside the project name: " + project + "\nAnd with some information about the role: " + body + "\nDue by: " + due;
     alert(post)
 }

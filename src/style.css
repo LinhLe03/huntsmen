@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 .header {
@@ -60,24 +61,102 @@ body {
 
 .content {
     background-color: #FFD987;
-    padding: 2rem;
+    padding: 2.5rem;
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     gap: 3.5rem;
 }
 
 .active-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: white;
     border-radius: 1rem;
     padding: 1rem;
+    border: 0.2rem solid #FFAE00;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
     border-radius: 1rem;
     padding: 1rem;
     background-color: white;
+    border: 0.15rem solid #FFAE00;
 }
+
+.card li {
+    margin-left: 1.5rem;
+}
+
 .selected {
-    background-color: #87ADFF;
+    background-color: rgba(135, 173, 255, 85%);
+    color: white;
+    border-color: rgb(135, 173, 255);
+}
+
+input {
+    border-radius: 1.4rem;
+    border-color: #FFD987;
+    min-height: 1.7rem;
+    font-size: 1.2rem;
+    padding: 0.3rem 1rem;
+}
+
+.search {
+    background-color: #FFD987;
+    padding: 2.5rem;
+    padding-bottom: 0rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.search button {
+    background-color: white;
+    border: 0.2rem solid #FFAE00;
+    color: #FFAE00;
+    border-radius: 0.9rem;
+    font-size: 1.2rem;
+    padding: 0.4rem 1rem;
+}
+
+.search button:hover {
+    background-color: #FFAE00;
     color: white;
 }
+
+.hexagon {
+    width: 15rem;
+    aspect-ratio: 1/cos(30deg); 
+    clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0% 50%);
+    background-color: #FFD987;
+    align-self: center;
+}
+  
+/* create listing page */
+.create-listing-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #FFD987;
+}
+
+.create-listing-container h1 {
+    font-size: 300%;
+}
+.create-listing-box {
+    background-color: white;
+    color: #FFAE00;
+
+    border: 5px solid #FFAE00;
+    border-radius: 20px;
+
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+
+}
+

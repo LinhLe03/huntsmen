@@ -8,6 +8,7 @@ body {
     
 }
 
+
 .header {
     display: flex;
     flex-direction: row;
@@ -52,11 +53,32 @@ body {
     height: 50px;
 }
 
+/* .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FFAE00;
+}
+
+.footer-container-social {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+.header-container-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} */
+
+
 /* homepage css */
 .posts {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    overflow-y: scroll;
     overflow-y: scroll;
 }
 
@@ -66,6 +88,7 @@ body {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     gap: 3.5rem;
+    height: 50rem;
     height: 50rem;
 }
 
@@ -82,15 +105,22 @@ body {
 
 .active-post li {
     margin-left: 1.4rem;
+    font-size: 1.2rem;
+}
+
+.active-post li {
+    margin-left: 1.4rem;
 }
 
 .card {
+    z-index: 1;
     z-index: 1;
     display: flex;
     flex-direction: column;
     gap: 3rem;
     border-radius: 1rem;
     padding: 1rem;
+    background-color: rgba(255, 255, 255, 90%);
     background-color: rgba(255, 255, 255, 90%);
     border: 0.15rem solid #FFAE00;
 }
@@ -140,6 +170,9 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 15rem;
     aspect-ratio: 1/cos(30deg); 
     clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0% 50%);
@@ -171,3 +204,79 @@ input {
     rotate: 43deg;
     overflow: hidden;
 }
+  
+.hexagon button {
+    background-color: white;
+    border: 0.2rem solid #FFAE00;
+    color: #FFAE00;
+    border-radius: 0.9rem;
+    font-size: 1.2rem;
+    padding: 0.4rem 1rem;
+}
+
+.hexagon button:hover {
+    background-color: #FFAE00;
+    color: white;
+}
+#triangle-right {
+    position: absolute;
+    top: 70%;
+    left: -20%;
+    width: 40rem;
+    height: 40rem;
+    z-index: 0;
+    background-color: #FFAE00;
+    rotate: 43deg;
+    overflow: hidden;
+}
+
+/* create listing page */
+.listing-container {
+    background-color: #FFD987;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.listing-container-item {
+    margin: 25px;
+    padding: 10px;
+    background-color: white;
+    border: 7px solid #FFAE00;
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.listing-container-input {
+    margin: 15px;
+    padding: 10px;
+    background-color: #FFD987;
+    display: flex;
+    flex-direction: row;
+}
+
+.listing-container-input-left {
+    padding: 5px;
+    width: 30%;
+}
+
+.listing-container-input-right {
+    padding: 5px;
+    width: 70%;
+}
+
+.listing-preivew-bounds {
+    display: flex;
+    flex-direction: row;
+}
+
+.listing-preivew-left {
+    display: flex;
+    flex-direction: row;
+}
+
+
+

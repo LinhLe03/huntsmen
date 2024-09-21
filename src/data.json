@@ -1,0 +1,13 @@
+{
+    "posts": {
+        "post1": {
+            "Title": "Script Writer",
+            "Responibilities": {
+                "response1": "Design and build responive websites",
+                "response2": "Collabirate with design and marketing teams",
+                "response3": "Optimise website performance and user experience"
+            },
+            "Deadline": "01/01/24"
+        }
+    }
+} 

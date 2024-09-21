@@ -16,5 +16,10 @@ function post() {
 
     console.log("this would post a post with the title: " + role)
     console.log("Alongside the project name: " + project)
-    console.log("And with some information about the role: " + body)  
+    console.log("And with some information about the role: " + body)
+    
+    const postpopup = window.open
+
+    const post = "this would post a post with the title: " + role + "\n Alongside the project name: " + project + "\n And with some information about the role: " + body;
+    postMessage("ihu")
 }

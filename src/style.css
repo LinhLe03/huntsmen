@@ -211,6 +211,7 @@ input {
 
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .listing-container-input {
@@ -241,5 +242,13 @@ input {
     flex-direction: row;
 }
 
+textarea {
+    resize: none;
+    border-radius: 1.4rem;
+    border-color: #FFD987;
+    min-height: 1.7rem;
+    font-size: 1.2rem;
+    padding: 0.3rem 1rem;
 
+}
 

@@ -10,7 +10,9 @@
     <header class="header">
         <div class="header-container-title">
             <img id="bee-icon"  class="web-icon" src="images/00.png">
-            <h1 class="header-box">Colla<span style="color: black;">bee</span>rate</h1>    
+            <a href="index.html" style="text-decoration: none;">
+                <h1 class="header-box">Colla<span style="color: black;">bee</span>rate</h1> 
+            </a>  
         </div>  
         <div class="header-container-user">
             <a href="https://youtu.be/-5UNt-CxoQ8?si=4uU7Jmg2huvs9--s&t=36" target="_blank">
@@ -24,22 +26,26 @@
 
 </head>
 <body>
-    <a href="index.html"><h1>exit</h1></a>
-
     <div class="listing-container">
         <div class="listing-container-item">
             <h1>Create Listing</h1>
             <div class="listing-container-input">
-                <div class="listing-container-input-left" id="role-input"><h2>Role:</h2></div>
-                <div class="listing-container-input-right"><input/></div>
+                <div class="listing-container-input-left" ><h2>Role:</h2></div>
+                <div class="listing-container-input-right">
+                    <input oninput="updateInput(this, 'role-output')"></input>
+                </div>
             </div>
             <div class="listing-container-input">
                 <div class="listing-container-input-left" id="project-input"><h2>Project:</h2></div>
-                <div class="listing-container-input-right"><input/></div>
+                <div class="listing-container-input-right">
+                    <input  oninput="updateInput(this, 'project-output')"></input>
+                </div>
             </div>
             <div class="listing-container-input">
                 <div class="listing-container-input-left" id="body-input"><h2>Body:</h2></div>
-                <div class="listing-container-input-right"><input/></div>
+                <div class="listing-container-input-right">
+                    <textarea oninput="updateInput(this, 'body-output')" rows="5" cols="33" wrap="hard"></textarea>
+                </div>
             </div>
             <div class="listing-container-input">
                 <div class="listing-container-input-left"><h2>Attachments</h2></div>
@@ -48,7 +54,11 @@
         </div>
         <div class="listing-container-item">
             <h1>Preview Listing</h1>
+            <h1 class="input" id="role-output">Role</h1>
+            <h2 class="input" id="project-output">Project</h2>
+            <h3 class="input" id="body-output">Info</h3>
 
+            <button onclick="post()">Post</button>
         </div>
     </div> 
     

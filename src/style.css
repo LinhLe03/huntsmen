@@ -1,0 +1,34 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: auto;
+    padding: auto;
+    background-color: #FFAE00;
+}
+
+.header-container-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-container-user {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-box {
+    padding: 10px;
+    margin: 10px;
+    /*background:aqua;*/
+}
+
+.header h1 {
+    color: white;
+}

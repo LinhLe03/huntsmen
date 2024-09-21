@@ -84,7 +84,6 @@ function CreateCardsAndAppend(cardsContainer, json) {
         cardsContainer.appendChild(card);
     }
 }
-};
 
 // view live update for inputs into post creation
 function updateInput(i, output) {

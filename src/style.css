@@ -103,10 +103,11 @@ body {
 
 .active-post li {
     margin-left: 1.4rem;
+    font-size: 1.2rem;
 }
 
+
 .card {
-    z-index: 1;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -181,22 +182,11 @@ input {
     background-color: #FFAE00;
     color: white;
 }
-#triangle-right {
-    position: absolute;
-    top: 70%;
-    left: -20%;
-    width: 40rem;
-    height: 40rem;
-    z-index: 0;
-    background-color: #FFAE00;
-    rotate: 43deg;
-    overflow: hidden;
-}
 
 /* create listing page */
 .listing-container {
     background-color: #FFD987;
-    height: 110vh;
+    height: 100vh;
 
     display: flex;
     flex-direction: column;
@@ -211,7 +201,6 @@ input {
 
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
 }
 
 .listing-container-input {
@@ -234,29 +223,10 @@ input {
 
 .listing-preivew-bounds {
     display: flex;
-    flex-direction: column;
-    background-color: rgba(135, 173, 255, 85%);
+    flex-direction: row;
 }
 
-button {
-    background-color: white;
-    border: 0.2rem solid #FFAE00;
-    color: #FFAE00;
-    border-radius: 0.9rem;
-    font-size: 1.2rem;
-    padding: 0.4rem 1rem;
+.listing-preivew-left {
+    display: flex;
+    flex-direction: row;
 }
-button:hover {
-    background-color: #FFAE00;
-    color: white;
-}
-
-textarea {
-    resize: none;
-    border-radius: 1.4rem;
-    border-color: #FFD987;
-    min-height: 1.7rem;
-    font-size: 1.2rem;
-    padding: 0.3rem 1rem;
-}
-

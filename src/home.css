@@ -22,6 +22,9 @@ body {
 }
 
 .active-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: white;
     border-radius: 1rem;
     padding: 1rem;
@@ -39,13 +42,13 @@ body {
 }
 
 .card li {
-    margin-left: 1.4rem;
+    margin-left: 1.5rem;
 }
 
 .selected {
-    background-color: #87ADFF;
+    background-color: rgba(135, 173, 255, 85%);
     color: white;
-    border-color: black;
+    border-color: rgb(135, 173, 255);
 }
 
 input {
@@ -78,3 +81,12 @@ input {
     background-color: #FFAE00;
     color: white;
 }
+
+.hexagon {
+    width: 15rem;
+    aspect-ratio: 1/cos(30deg); 
+    clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0% 50%);
+    background-color: #FFD987;
+    align-self: center;
+}
+  
